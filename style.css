@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Balsamiq+Sans&family=Fredoka+One&family=Lobster&display=swap');
+:root{
+    --main-font: 'Fredoka One', cursive;
+    --secondary-font: 'Balsamiq Sans', cursive;
+    --orange:rgb(250, 198, 119);
+    --silver:rgb(235, 225, 225);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar-brand {
+    font-family: var(--main-font);
+    letter-spacing: 0.2rem;
+
+}
+#nav-bar{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar-nav li{
+    padding: 0 10px;
+
+}
+.navbar-nav li a{
+    color: black !important;
+    font-weight: 700;
+    font-family: var(--secondary-font)
+
+    ;
+}
+.navbar-toggler{
+    outline: none !important;
+}
+header {
+   min-width: 100vw;
+    min-height: 100vh;
+    background-image: url('img/background.jpg')  ;
+    background-size: cover ;
+    
+   
+}
+.shorten{
+    display: flex;
+    
+}
+.search ,.done{
+    border:2px var(--silver) solid;
+    border-radius: 50%;
+    background:var(--orange);
+    color: black;
+    font-weight: 300;
+    font-size: 20px;
+    display: flex;
+    outline: none;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    
+}
+
+
+
+.input{
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    transition: 0.5s ease-in-out all;
+    width: 60%;
+    padding: 0 50px;
+    margin-right: 10px;
+    height: 50px;
+
+
+}
+
+    
+
+
+
+.banner{
+    justify-content: center;
+    align-items: center;
+}
+#link{
+    background:transparent;
+    border-radius: 25px;
+
+
+   
+    text-decoration: none;
+    font-size: 25px;
+    font-family: var(--main-font);
+    
+    color:var(--silver);
+}
+.title{
+    font-size: 65px;
+    margin-top: 100px;
+    font-family: var(--main-font);
+    letter-spacing:0.2rem;
+    color: var(--orange);
+    
+    
+
+}
+.icon{
+    transform: rotate(-90deg);
+    font-size:70px;
+    
+    
+}
+
+.subtext{
+    font-size:35px ;
+    color:var(--silver) ;
+    font-family: var(--secondary-font)
+}
+#out{
+    font-size: 15px;
+    color: var(--silver);
+    font-family: var(--secondary-font);
+}
+#result{
+    font-size:20px ;
+    color:var(--orange);
+    font-family: var(--secondary-font);
+}
