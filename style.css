@@ -42,6 +42,7 @@ header {
   min-width: 100vw;
   min-height: 100vh;
   background-image: url("img/background.jpg");
+  background-position: top right;
   background-size: cover;
 }
 .shorten {
@@ -53,7 +54,6 @@ header {
   outline: 0;
   width: 100%;
   padding: 0 50px;
-  margin-right: 10px;
   height: 50px;
 }
 .op-inp {
@@ -103,12 +103,11 @@ header {
 #link {
   font-size: 25px;
   font-family: var(--main-font);
-
   color: var(--silver);
 }
 .title {
   font-size: 65px;
-  margin-top: 140px;
+  margin-top: 95px;
   font-family: var(--main-font);
   letter-spacing: 0.2rem;
   color: var(--orange);
@@ -163,7 +162,6 @@ header {
     height: 40px;
   }
 }
-
 @media (max-width: 990px) {
   .head-text {
     font-size: 55px;
@@ -172,12 +170,11 @@ header {
     font-size: 30px;
   }
 }
-@media(max-width:768px)
-{
-    .link-out a {
-        text-align: right;
-        margin-right: 20px;
-    }
+@media (max-width: 768px) {
+  .link-out a {
+    text-align: right;
+    margin-right: 20px;
+  }
 }
 @media (max-width: 680px) {
   .head-text {
@@ -193,7 +190,7 @@ header {
     text-align: center;
   }
   .title {
-    margin-top: 100px;
+    margin-top: 75px;
   }
   #link {
     font-size: 20px;
