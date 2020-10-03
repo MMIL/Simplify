@@ -5,3 +5,12 @@ Abhinav Juyal
   Added some changes to the logo for the app,
   For resources and queries (logo, background image, etc.), ping me at MMIL Hacktoberfest whatsapp group.
   Behance project link - https://www.behance.net/gallery/105400329/MMIL-Simplify
+
+
+Abhinav Juyal
+  Added some changes to the web design for the Simplify App
+  For resources and queries (logo, new color scheme, etc.), ping me at MMIL Hacktoberfest whatsapp group/
+  Behance project link - https://www.behance.net/gallery/105409475/MMIL-Simplify-2
+ 
+  
+ 
