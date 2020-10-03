@@ -21,12 +21,6 @@ body {
   font-family: var(--main-font);
   letter-spacing: 0.2rem;
 }
-#nav-bar {
-  position: sticky;
-  top: 0;
-  z-index: 10;
-}
-
 .navbar-nav li {
   padding: 0 10px;
 }
