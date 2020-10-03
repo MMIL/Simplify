@@ -13,8 +13,10 @@ const getLocal = () => {
             const key = localStorage.key(i);
             const value = localStorage.getItem(key);
             output.innerHTML += `
-            <p>${key}</p>
-            <a href='https://${value}' target='blank'>${value}</a>
+            <div class="link-out">
+                <p>${key}</p>
+                <a href='https://${value}' target='blank'>${value}</a>
+            </div>
             `;
         }
     }
@@ -64,8 +66,10 @@ btn.addEventListener("click", () => {
 const showLink = (str) => {
     let link = `${BASE_URL}${str.data.hashid}`;
     output.innerHTML += `
-    <p>${str.data.url}</p>
-    <a href='https://${link}' target='blank'>${link}</a>
+    <div class="link-out">
+        <p>${str.data.url}</p>
+        <a href='https://${link}' target='blank'>${link}</a>
+    </div>
     `;
     // adding result to local storage
     setLocal(str.data.url, link);
