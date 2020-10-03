@@ -10,8 +10,7 @@ This will be a webpage designed to conveniently convert a lengthy URL to a simpl
  ### Screenshots
 
  <a> <img src="https://github.com/vaishali8799/Simplify/blob/frontend-simplify/img/2020-10-03%20(8).png" height="300"></a>
- <a> <img src="https://github.com/vaishali8799/Simplify/blob/frontend-simplify/img/2020-10-03%20(10).png" height="300"></a>
- <a> <img src="https://github.com/vaishali8799/Simplify/blob/frontend-simplify/img/2020-10-03%20(7).png" height="300"></a>
+
 
 
 
