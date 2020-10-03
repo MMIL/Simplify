@@ -1,1 +1,7 @@
-
+Abhinav Juyal
+  Created web design for the Simplify App (for both pc and mobile),
+  Color Scheme used - #000000 (main theme),
+  Font used  - Raleway (main font),
+  Added some changes to the logo for the app,
+  For resources and queries (logo, background image, etc.), ping me at MMIL Hacktoberfest whatsapp group.
+  Behance project link - https://www.behance.net/gallery/105400329/MMIL-Simplify
