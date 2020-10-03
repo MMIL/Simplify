@@ -163,6 +163,7 @@ header {
     height: 40px;
   }
 }
+
 @media (max-width: 990px) {
   .head-text {
     font-size: 55px;
@@ -170,6 +171,13 @@ header {
   .subtext {
     font-size: 30px;
   }
+}
+@media(max-width:768px)
+{
+    .link-out a {
+        text-align: right;
+        margin-right: 20px;
+    }
 }
 @media (max-width: 680px) {
   .head-text {
@@ -190,11 +198,4 @@ header {
   #link {
     font-size: 20px;
   }
-}
-@media(max-width:768px)
-{
-    .link-out a {
-        text-align: right;
-        margin-right: 20px;
-    }
 }
