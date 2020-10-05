@@ -13,10 +13,8 @@ const getLocal = () => {
             const key = localStorage.key(i);
             const value = localStorage.getItem(key);
             output.innerHTML += `
-            <div class="link-out">
-                <p>${key}</p>
-                <a href='https://${value}' target='blank'>${value}</a>
-            </div>
+            <p>${key}</p>
+            <a href='https://${value}' target='blank'>${value}</a>
             `;
         }
     }
@@ -25,7 +23,6 @@ const setLocal = (longUrl, shortUrl) => localStorage.setItem(`${longUrl}`, `${sh
 const clearLocal = () => {
     localStorage.clear();
     output.innerHTML = '';
-    result.textContent = "Cleared";
 };
 
 // Getting Local Data
@@ -67,11 +64,22 @@ const showLink = (str) => {
     let link = `${BASE_URL}${str.data.hashid}`;
     output.innerHTML += `
     <div class="link-out">
-        <p>${str.data.url}</p>
-        <a href='https://${link}' target='blank'>${link}</a>
+    <p class="short">${str.data.url}</p>
+    <a href='https://${link}' target='blank'>${link}</a>
     </div>
+    
     `;
+    
     // adding result to local storage
     setLocal(str.data.url, link);
 }
+// dark mode
+const input = document.querySelector(".theme-switcher input");
 
+input.addEventListener("change", (e) => {
+  if (e.target.checked) {
+    document.body.setAttribute("data-theme", "dark");
+  } else {
+    document.body.setAttribute("data-theme", "light");
+  }
+});
