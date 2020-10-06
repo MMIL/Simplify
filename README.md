@@ -12,5 +12,4 @@ This will be a webpage designed to conveniently convert a lengthy URL to a simpl
  <a> <img src="https://github.com/vaishali8799/Simplify/blob/frontend-simplify/img/2020-10-03%20(8).png" height="300"></a>
 
 ### Video of simplify URL Shortener with dark mode
-<a href="file:///C:/Users/DIKSHA%20SHUKLA/Videos/Captures/MMIL%20-%20Simplify%20-%20Personal%20-%20Microsoft%E2%80%8B%20Edge%202020-10-06%2000-33-40.mp4"></a>
-
+<div style="width:360px;max-width:100%;"><div style="height:0;padding-bottom:54.17%;position:relative;"><iframe width="360" height="195" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameBorder="0" src="https://imgflip.com/embed/4hhcmk"></iframe></div><p><a href="https://imgflip.com/gif/4hhcmk">via Imgflip</a></p></div>
