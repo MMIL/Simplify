@@ -16,3 +16,10 @@ Abhinav Juyal
  Kushal Gautam
     Made Web and App UI for mobile and desktop version
     Behance link: https://www.behance.net/gallery/105411255/MMIL-Simplify-Link-Shortener-UI
+    
+    
+Kushal Gautam
+    Modified Web UI (both Normal and Dark Mode)
+    Changed colours and the fonts, added Simplify logo
+    Behance Link:https://www.behance.net/gallery/105659735/SImplify-URL-Shortener
+
