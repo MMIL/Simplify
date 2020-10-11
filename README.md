@@ -1,3 +1,6 @@
+<p>
+  <img src=./img/MMILft.Hacktober.jpeg></p>
+  
 <h1 align="center">Welcome to Simplify 👋</h1>
 
 [![GitHub stars](https://img.shields.io/github/stars/MMIL/Simplify?style=social)](https://github.com/login?return_to=%2FMMIL%Simplify) 
@@ -13,9 +16,10 @@
 This will be a webpage designed to conveniently convert a lengthy URL to a simplified one.
 
 ### Festures To be Implemented
-- One click Shortener
+- update the current UI design
 
  ### Simplify updated web design with dark mode
- ![4hhhsl](https://user-images.githubusercontent.com/60606998/95168490-047f2c00-07cf-11eb-9c13-e01cc53cc68c.gif)
- 
+ <p>
+  <img src=https://user-images.githubusercontent.com/60606998/95168490-047f2c00-07cf-11eb-9c13-e01cc53cc68c.gif height=250  width= 500></p>
+
 
