@@ -1,112 +1,271 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fjalla+One&family=Overpass:wght@600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MMIL - Simplify</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style1.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet">
-</head>
 
+  <!-- Bootstrap Core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+    <script type="text/javascript">
+        var d1 = document.getElementById('hello-world');
+d1.insertAdjacentHTML('afterbegin', 'Hello, World!');
+    </script>
+    <style type="text/css">
+
+        * {
+  top: 0;
+  left: 0;
+  margin: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  place-items: center;
+}
+
+#main {
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  display: flex;
+}
+
+#btn:checked ~ #main {
+  transition: .5s all;
+  filter: invert(1) hue-rotate(210deg);
+}
+*,*:after,*:before {
+  box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+}
+
+.cf:before,
+.cf:after {
+    content:"";
+    display:table;
+}
+.cf:after {
+    clear:both;
+}
+
+
+a,a:visited {
+  color:#fff
+}
+
+.searchform {
+  background:#f4f4f4;
+  background:rgba(244,244,244,.79);
+  border: 1px solid #d3d3d3;
+    left: 50%;
+  padding: 2px 5px;
+  position: absolute;
+    margin: -22px 0 0 -170px;
+    top: 50%;
+  width:339px;
+  box-shadow:0 4px 9px rgba(0,0,0,.37);
+  -moz-box-shadow:0 4px 9px rgba(0,0,0,.37);
+  -webkit-box-shadow:0 4px 9px rgba(0,0,0,.37);
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px
+}
+
+.searchform input, .searchform button {
+    float: left
+}
+.searchform input {
+    background:#fefefe;
+    border: none;
+    font:12px/12px 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    margin-right: 5px;
+    padding: 10px;
+    width: 216px;
+    box-shadow: 0 0 4px rgba(0,0,0,.4) inset, 1px 1px 1px rgba(255,255,255,.75);
+    -moz-box-shadow: 0 0 4px rgba(0,0,0,.4) inset, 1px 1px 1px rgba(255,255,255,.75);
+    -webkit-box-shadow: 0 0 4px rgba(0,0,0,.4) inset, 1px 1px 1px rgba(255,255,255,.75);
+  border-radius: 9px;
+  -moz-border-radius: 9px;
+  -webkit-border-radius: 9px
+}
+    .searchform input:focus {
+        outline: none;
+        box-shadow:0 0 4px #0d76be inset;
+        -moz-box-shadow:0 0 4px #0d76be inset;
+        -webkit-box-shadow:0 0 4px #0d76be inset;
+    }
+    .searchform input::-webkit-input-placeholder {
+    font-style: italic;
+    line-height: 15px
+    }
+
+    .searchform input:-moz-placeholder {
+      font-style: italic;
+    line-height: 15px
+    }
+
+.searchform button {
+    background: rgb(52,173,236);
+    background: -moz-linear-gradient(top, rgba(52,173,236,1) 0%, rgba(38,145,220,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(52,173,236,1)), color-stop(100%,rgba(38,145,220,1)));
+    background: -webkit-linear-gradient(top, rgba(52,173,236,1) 0%,rgba(38,145,220,1) 100%);
+    background: -o-linear-gradient(top, rgba(52,173,236,1) 0%,rgba(38,145,220,1) 100%);
+    background: -ms-linear-gradient(top, rgba(52,173,236,1) 0%,rgba(38,145,220,1) 100%);
+    background: linear-gradient(to bottom, rgba(52,173,236,1) 0%,rgba(38,145,220,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#34adec', endColorstr='#2691dc',GradientType=0 );
+    border: none;
+    color:#fff;
+    cursor: pointer;
+    font: 13px/13px 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    padding: 10px;
+    width:106px;
+    box-shadow: 0 0 2px #2692dd inset;
+    -moz-box-shadow: 0 0 2px #2692dd inset;
+    -webkit-box-shadow: 0 0 2px #2692dd inset;
+  border-radius: 9px;
+  -moz-border-radius: 9px;
+  -webkit-border-radius: 9px;
+}
+    .searchform button:hover {
+        opacity:.9;
+    }
+
+#btn {
+  z-index: 3;
+  width: 10vw;
+  height: 4vw;
+  -webkit-appearance: none;
+  position: absolute;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  left: 85vw;
+  top: 5vw;
+  border-radius: 2.5vw;
+  background: white;
+}
+
+input[type="checkbox"]:before {
+  content: "";
+  position: absolute;
+  width: 3vw;
+  height: 3vw;
+  border-radius: 5vw;
+  background: black;
+  left: .5vw;
+  top: .5vw;
+  transition: .5s;  
+}
+
+input:checked[type="checkbox"] {
+  box-shadow: inset 0 0 100px rgba(0,0,0,1);
+}
+
+input:checked[type="checkbox"]:before {
+  left: 6.5vw;
+  background: white;
+}
+
+@media only screen and (max-width: 600px) {
+  div.exap{
+font-size: 16px;
+  }
+  .img
+  {
+    height: 100px;
+    width: 100px;
+  }
+}
+code {
+  top: 50%;
+  margin: auto;
+  font-size: 4vw;
+  color: white;
+  text-align: center;
+}
+    </style>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.3/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <title>simplify</title>
+  </head>
+  <body >
+    
+  
 <body data-theme="light">
-    <header>
-        <div class="container">
-            <div class="row height">
-                <div class="heading">
-                    <h1>Simplify</h1>
-                </div>
-                <div class="branding">
-                    <img src="img/logohd(1).png" alt="" width="100" height="100">
-                </div>
-                <div class="button1">
-                    <button type="submit" class="btn d-block w-20">About</button></div>
-                <div class="theme-switcher">
-                    <input type="checkbox" id="switcher">
-                    <label for=switcher>switch</label>
-                </div>
-            </div>
-        </div>
-    </header>
-    <section id="description" class="py-3 colour">
-        <div class="container">
-            <!--title-->
-            <div class="row height1">
-                <div class="col-lg-8">
-                    <p class=" text-lg-left size font-weight-bold text-light lead">Simplify your links by making them short.</p>
-                    <p class=" text-lg-left text">Just enter your link and you are ready to go.</p>
-                </div>
-                <div class="col-lg-4">
-                    <div class="imgpos"><img src="img/simplify-1.png" width="500" height="450"></div>
-                </div>
-                <div class="box">
-                    <div>
-                        <div class="mt-3 text-center">
-                            <input type="url" class="inp" size="60" required placeholder="    Enter URL here...">
-                            <button id="btn" class="btn m-2 px-4 font-weight-bold text-uppercase">Simplify</button>
-                            <button id="clr" class="btn m-2 px-4 font-weight-bold text-uppercase">Clear</button>
-                        </div>
-                        <div>
-                            <p id="result"></p>
-                            <p id="out"></p>
-                        </div>
-                    </div>
-                    <div class="box2">
-                        <p class="pl-4 mt-2 text-align-left font-size">Previous Simplified URLs</p>
-                        <br>
-                        <div class="row justify-content-around">
-                            <div class="col-6 box3">
-                                https://getbootstrap.com/docs/4.5/layout/g... <i class="fa fa-clone" aria-hidden="true"></i>
-                            </div>
-                            <div class="col-4 box4">
-                                https://rel.ink/nWGJY5 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-clone" aria-hidden="true"></i>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="row justify-content-around">
-                            <div class="col-6 box3">
-                                https://www.w3schools.com/icons/fontawe... <i class="fa fa-clone" aria-hidden="true"></i>
-                            </div>
-                            <div class="col-4 box4">
-                                https://rel.ink/9MbLGy &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-clone" aria-hidden="true"></i>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="row justify-content-around">
-                            <div class="col-6 box3">
-                                https://www.youtube.com/channel/UClgRTL... <i class="fa fa-clone" aria-hidden="true"></i>
-                            </div>
-                            <div class="col-4 box4">
-                                https://rel.ink/k58M15&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="fa fa-clone" aria-hidden="true"></i>
-                            </div>
-                        </div>
+  
+  <input type="checkbox" id="btn"  onclick="typeWriter()" />
 
-                    </div>
-
-                </div>
-            </div>
-    </section>
-    <footer id="footer" class="py-2">
-        <div class="container">
-            <div class="row">
-                <div class="col text-center pr-5">
-                    <p>Follow Us on: <i class="fab fa-facebook-square" aria-hidden="true"></i> <i class="fab fa-instagram" aria-hidden="true"></i> <i class="fab fa-twitter" aria-hidden="true"></i></p>
-                </div>
-            </div>
-        </div>
-    </footer>
+  <div id="main">
+               
+ <code id="hello-world"><h1>Simplify</h1><br>
+    <p id="demo" style="font-size: 24px;"></p><br><br>
+     <center><img src="logohd(1).png" width="200" height="200"></center>
+</code>
+    <form class="searchform cf">
+  <input type="text" placeholder="Enter URL">
+  <button type="submit">Go</button>
+</form></div>
 
 
+  
 
+  <script>
+var i = 0;
+var txt = 'Simplify your links by making them short';
+var speed = 50;
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+
+</script>
 </body>
+    <!-- Optional JavaScript; choose one of the two! -->
 
-<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-<script src="js/script.js"></script>
-<!-- JS, Popper.js, and jQuery -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.3/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.3/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
 
 </html>
